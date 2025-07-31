@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# 🎯 AI-Based Career Mentor Guidance System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **AI-Based Career Mentor Guidance System** — an intelligent career guidance platform designed to help students and job seekers make informed, personalized career decisions using data-driven AI recommendations, skill development resources, and real-time opportunities.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Project Overview
 
-### `npm start`
+This web-based application leverages machine learning, real-time data integration, and user-driven customization to recommend the best-fit career paths, skill-building resources, and relevant job or internship opportunities.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Whether you're a student planning your career or a professional seeking advancement, this platform provides a complete ecosystem to guide you through the journey.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 💡 Core Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🔍 **AI-Powered Career Recommendations**  
+  Get tailored career suggestions based on your skills, interests, goals, and background.
 
-### `npm run build`
+- 🎓 **Learning & Skill Development**  
+  Personalized course and certification suggestions sourced from global free learning platforms.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🧑‍💼 **Real-Time Job & Internship Feed**  
+  Integrated job/internship listings filtered by user preferences and career matches.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 🧾 **Smart Resume Builder**  
+  Create, preview, download, and store resumes with AI-enhanced content suggestions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 🧠 **AI Career Roadmaps**  
+  Automatically generated learning and experience roadmaps for recommended career paths.
 
-### `npm run eject`
+- 🧑‍🤝‍🧑 **Community & Networking (Coming Soon)**  
+  Connect with peers, mentors, and industry professionals.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- 🔐 **Secure Authentication**  
+  Google login and email/password support via Firebase.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 🛠️ **Admin Panel**  
+  Full access for platform management, including user, course, and content moderation.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧰 Tech Stack
 
-## Learn More
+**Frontend:**  
+- React.js  
+- TailwindCSS  
+- React Hook Form + Zod  
+- Firebase Auth  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Backend:**  
+- Node.js + Express  
+- MongoDB + Mongoose  
+- Flask (for AI model microservices)  
+- Gemini API (Google AI) for roadmap generation  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**AI Models:**  
+- Scikit-learn + Pandas (Career prediction)  
+- Custom encoders for input preprocessing  
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🗂 Project Structure
 
-### Analyzing the Bundle Size
+career-guide-app/
+├── client/ # React Frontend
+├── server/ # Node.js API
+├── ai-models/ # Python ML & Flask Services
+├── docs/ # Documentation
+└── README.md
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## ⚙️ Installation & Setup
 
-### Advanced Configuration
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/ai-career-mentor.git
+   cd ai-career-mentor
+   ```
+2. **Frontend Setup**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+cd client
+npm install
+npm start
+```
 
-### Deployment
+3. **Backend Setup**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+cd ../server
+node index.js
+```
 
-### `npm run build` fails to minify
+4. **AI Model (Flask Service)**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+cd ../ai-models
+pip install -r requirements.txt
+python app.py
+```
+
+5. **Environment Setup**
+
+create a .env file in client folder and add your firebase Config 
+
+---
